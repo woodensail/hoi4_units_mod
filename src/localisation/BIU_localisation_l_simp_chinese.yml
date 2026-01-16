@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ MIA_light_infantry: "轻装步兵营"
+ MIA_heavy_infantry: "重装步兵营"
+ MIA_garrison_infantry: "警备营"
+ MIA_militia_infantry: "民兵营"
+ MIA_combined_infantry: "轻型合成营"
+ MIA_combined_infantry_heavy: "加强轻型合成营"
