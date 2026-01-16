@@ -1,0 +1,20 @@
+l_french:
+ MIA_light_infantry: "Bataillon d'infanterie légère"
+ MIA_heavy_infantry: "Bataillon d'infanterie lourde"
+ MIA_garrison_infantry: "Bataillon de garnison"
+ MIA_militia_infantry: "Bataillon de milice"
+ MIA_combined_infantry: "Bataillon d'armes combinées légères"
+ MIA_combined_infantry_heavy: "Bataillon d'armes combinées légères renforcé"
+ MIA_motorized_combined: "Bataillon d'armes combinées motorisé"
+ MIA_mechanized_combined: "Bataillon d'armes combinées mécanisé"
+
+ # Combined Arms Doctrine
+ SUBDOCTRINE_combined_arms_initiative: "Initiative d'armes combinées"
+ SUBDOCTRINE_combined_arms_initiative_DESC: "La guerre n'est plus une simple addition d'infanterie et d'artillerie. En attribuant directement des armes de soutien aux formations au niveau du bataillon, nous construisons des unités tactiques polyvalentes capables de gérer indépendamment des champs de bataille complexes."
+ 
+ # Stages of Combined Arms Doctrine
+ coordinated_drills: "Entraînement coordonné standardisé"
+ firepower_integration: "Intégration de la puissance de feu au niveau du bataillon"
+ logistical_standardization: "Standardisation logistique au niveau du théâtre"
+ combined_arms_exercise: "Exercices tactiques interarmes"
+ modular_template_reform: "Réforme de formation modulaire"

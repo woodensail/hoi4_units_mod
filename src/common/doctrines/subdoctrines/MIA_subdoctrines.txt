@@ -1,72 +1,80 @@
-#中华人民解放军
-renmin_jiefangjun = {
+combined_arms_initiative = {
     track = infantry
-    name = SUBDOCTRINE_renmin_jiefangjun
-    description = SUBDOCTRINE_renmin_jiefangjun_DESC
+    name = SUBDOCTRINE_COMBINED_ARMS_DAWN
+    description = SUBDOCTRINE_COMBINED_ARMS_DAWN_DESC
     icon = GFX_doctrine_mission_type_tactics_medium
 
     xp_cost = 100
     xp_type = army
 
-    ai_will_do = {
-        base = 1000
-    }
-
     available = {
-        tag = PRC
-        CHI = {
-            exists = no
-        }
+        always = yes
     }
-    # EFFECTS
-    category_all_infantry = {
-                combat_width = -0.4
-                max_organisation = 5
-                initiative = 0.03
-            }
-            supply_combat_penalties_on_core_factor = -0.1
-            enable_tactic = tactic_human_wave_tactics
-            minimum_training_level = 0.1
-            training_time_army_factor = -0.1
 
-     rewards = {
-        zijizao = {#
-        #1
-            category_all_infantry = {
-                equipment_capture_factor = 0.01
-                reliability = 0.01
+    ai_will_do = {
+        base = 0
+    }
+
+    # --- 基础效果 (EFFECTS) ---
+    # 仅针对合成化部队
+    category_combined_infantry = {
+        max_organisation = 5
+        training_time_factor = -0.1
+    }
+
+    # --- 阶段奖励 (REWARDS) ---
+    rewards = {
+        # 1. 协同化训练 (Coordinated Drills)
+        # 补坑：开始回收可靠性惩罚
+        coordinated_drills = {
+            category_combined_infantry = {
+                max_organisation = 5           # 累计 +10
+                reliability_factor = 0.05      # 可靠性补偿 +5%
+                default_morale = 0.05
+            }
+        }
+
+        # 2. 火力整合 (Firepower Integration)
+        # 强调营级单位单独作战时的火力密度提升
+        firepower_integration = {
+            category_combined_infantry = {
                 soft_attack = 0.05
                 hard_attack = 0.05
                 defense = 0.05
+                breakthrough = 0.05
             }
         }
-        xisheng = {
-            pocket_penalty = -0.2
-        #2
-            category_all_infantry = {
-                breakthrough = 0.2
+
+        # 3. 后勤标准化 (Logistical Standardization)
+        # 重点解决高额补给问题
+        logistical_standardization = {
+            category_combined_infantry = {
+                supply_consumption = -0.2     # 显著降低补给压力
+                max_organisation = 5           # 累计 +15
+                reliability_factor = 0.05      # 累计可靠性补偿达 +10%，完全抵消基础惩罚
             }
         }
-        zhihui = {
-        #3
-            max_planning_factor = 0.1
-            planning_speed = 0.05
-            skill_bonus_factor = 0.15
-            command_abilities_cost_factor = -0.15
+
+        # 4. 诸兵种协同演习 (Combined Arms Exercise)
+        # 用计划和速度替代地形补偿，体现合成营的进攻灵活性
+        combined_arms_exercise = {
+            category_combined_infantry = {
+                breakthrough = 0.2             # 增加突破
+                maximum_speed = 0.2            # 增加移动速度
+                max_planning_factor = 0.1      # 提升计划上限
+                planning_speed = 0.1           # 提升计划速度
+            }
         }
-        weirenminfuwu = {
-        #4
-            stability_weekly = 0.0025
-            war_support_weekly = 0.0025
-            political_power_cost = -0.15
-            unit_upkeep_attrition_factor = -0.2
-        }
-        tianxiawudi = {
-            category_all_infantry = {
-                soft_attack = 0.15
-                hard_attack = 0.15
-                defense = 0.1
-			}
+
+        # 5. 模块化编制改革 (Modular Template Reform)
+        # 终极质变
+        modular_template_reform = {
+            category_combined_infantry = {
+                combat_width = -1.0            # 核心：降低宽度
+                initiative = 0.2               # 大幅提升主动性，模拟高效率战场选靶
+                max_organisation = 5           # 累计 +20，最终组织度回到正常步兵水平
+                default_morale = 0.1           # 提升组织度恢复
+            }
         }
     }
 }

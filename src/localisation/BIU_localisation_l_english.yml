@@ -1,0 +1,20 @@
+l_english:
+ MIA_light_infantry: "Light Infantry Battalion"
+ MIA_heavy_infantry: "Heavy Infantry Battalion"
+ MIA_garrison_infantry: "Garrison Battalion"
+ MIA_militia_infantry: "Militia Battalion"
+ MIA_combined_infantry: "Light Combined Arms Battalion"
+ MIA_combined_infantry_heavy: "Reinforced Light Combined Arms Battalion"
+ MIA_motorized_combined: "Motorized Combined Arms Battalion"
+ MIA_mechanized_combined: "Mechanized Combined Arms Battalion"
+
+ # Combined Arms Doctrine
+ SUBDOCTRINE_combined_arms_initiative: "Combined Arms Initiative"
+ SUBDOCTRINE_combined_arms_initiative_DESC: "Warfare is no longer a simple addition of infantry and artillery. By directly assigning support weapons to battalion-level formations, we are building versatile tactical units capable of independently handling complex battlefields."
+ 
+ # Stages of Combined Arms Doctrine
+ coordinated_drills: "Standardized Coordinated Training"
+ firepower_integration: "Battalion-Level Firepower Integration"
+ logistical_standardization: "Theater-Level Logistics Standardization"
+ combined_arms_exercise: "Cross-Arms Tactical Exercises"
+ modular_template_reform: "Modular Formation Reform"

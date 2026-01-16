@@ -1,0 +1,20 @@
+l_braz_por:
+ MIA_light_infantry: "Batalhão de Infantaria Leve"
+ MIA_heavy_infantry: "Batalhão de Infantaria Pesada"
+ MIA_garrison_infantry: "Batalhão de Guarnição"
+ MIA_militia_infantry: "Batalhão de Milícia"
+ MIA_combined_infantry: "Batalhão de Braços Combinados Leve"
+ MIA_combined_infantry_heavy: "Batalhão de Braços Combinados Leve Reforçado"
+ MIA_motorized_combined: "Batalhão de Braços Combinados Motorizado"
+ MIA_mechanized_combined: "Batalhão de Braços Combinados Mecanizado"
+
+ # Combined Arms Doctrine
+ SUBDOCTRINE_combined_arms_initiative: "Iniciativa de Braços Combinados"
+ SUBDOCTRINE_combined_arms_initiative_DESC: "A guerra não é mais uma simples soma de infantaria e artilharia. Ao atribuir diretamente armas de suporte às formações em nível de batalhão, estamos construindo unidades táticas versáteis capazes de lidar independentemente com campos de batalha complexos."
+ 
+ # Stages of Combined Arms Doctrine
+ coordinated_drills: "Treinamento coordenado padronizado"
+ firepower_integration: "Integração de fogo em nível de batalhão"
+ logistical_standardization: "Padronização logística em nível de teatro"
+ combined_arms_exercise: "Exercícios táticos multibranco"
+ modular_template_reform: "Reforma modular de formação"

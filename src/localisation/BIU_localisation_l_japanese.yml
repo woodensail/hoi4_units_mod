@@ -1,0 +1,20 @@
+l_japanese:
+ MIA_light_infantry: "軽装歩兵大隊"
+ MIA_heavy_infantry: "重装歩兵大隊"
+ MIA_garrison_infantry: "警備大隊"
+ MIA_militia_infantry: "民兵大隊"
+ MIA_combined_infantry: "軽量複合兵科大隊"
+ MIA_combined_infantry_heavy: "強化軽量複合兵科大隊"
+ MIA_motorized_combined: "機動複合兵科大隊"
+ MIA_mechanized_combined: "機械化複合兵科大隊"
+
+ # Combined Arms Doctrine
+ SUBDOCTRINE_combined_arms_initiative: "複合兵科イニシアティブ"
+ SUBDOCTRINE_combined_arms_initiative_DESC: "戦争はもはや歩兵と砲兵の単純な加算ではない。支援兵器を直接大隊レベルに配備することにより、複雑な戦場を独立して対処できる多機能戦術部隊を構築している。"
+ 
+ # Stages of Combined Arms Doctrine
+ coordinated_drills: "標準化された統制訓練"
+ firepower_integration: "大隊レベル火力統合"
+ logistical_standardization: "戦域レベルの補給標準化"
+ combined_arms_exercise: "兵科横断的な戦術演習"
+ modular_template_reform: "モジュール式編成改革"

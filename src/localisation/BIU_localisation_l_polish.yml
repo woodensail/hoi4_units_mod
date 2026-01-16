@@ -1,0 +1,20 @@
+l_polish:
+ MIA_light_infantry: "Batalion lekkiej piechoty"
+ MIA_heavy_infantry: "Batalion ciężkiej piechoty"
+ MIA_garrison_infantry: "Batalion garnizonowy"
+ MIA_militia_infantry: "Batalion milicji"
+ MIA_combined_infantry: "Lekki batalion wojsk połączonych"
+ MIA_combined_infantry_heavy: "Wzmocniony lekki batalion wojsk połączonych"
+ MIA_motorized_combined: "Batalion wojsk połączonych o napędzie mechanicznym"
+ MIA_mechanized_combined: "Batalion zmechanizowany wojsk połączonych"
+
+ # Combined Arms Doctrine
+ SUBDOCTRINE_combined_arms_initiative: "Inicjatywa Wojsk Połączonych"
+ SUBDOCTRINE_combined_arms_initiative_DESC: "Wojna nie jest już prostą sumą piechoty i artylerii. Poprzez bezpośrednie przydzielanie broni wspierającej na poziomie batalionu, tworzymy wszechstronne jednostki taktyczne zdolne do niezależnego radzenia sobie z złożonymi polami walki."
+ 
+ # Stages of Combined Arms Doctrine
+ coordinated_drills: "Znormalizowane szkolenie współrzędne"
+ firepower_integration: "Integracja ognia na poziomie batalionu"
+ logistical_standardization: "Standaryzacja logistyki na poziomie teatru działań"
+ combined_arms_exercise: "Ćwiczenia taktyczne oddziałów wielobranżowych"
+ modular_template_reform: "Modularna reforma formacji"

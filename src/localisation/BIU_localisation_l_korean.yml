@@ -1,0 +1,20 @@
+l_korean:
+ MIA_light_infantry: "경장 보병대대"
+ MIA_heavy_infantry: "중장 보병대대"
+ MIA_garrison_infantry: "경비대대"
+ MIA_militia_infantry: "민병대대"
+ MIA_combined_infantry: "경량 병과 혼성대대"
+ MIA_combined_infantry_heavy: "강화된 경량 병과 혼성대대"
+ MIA_motorized_combined: "기동 병과 혼성대대"
+ MIA_mechanized_combined: "기계화 병과 혼성대대"
+
+ # Combined Arms Doctrine
+ SUBDOCTRINE_combined_arms_initiative: "병과 혼성 이니셔티브"
+ SUBDOCTRINE_combined_arms_initiative_DESC: "전쟁은 더 이상 보병과 포병의 단순한 합이 아니다. 지원 병기를 직접 대대급으로 배치함으로써, 복잡한 전장을 독립적으로 처리할 수 있는 다기능 전술 부대를 구축하고 있다."
+ 
+ # Stages of Combined Arms Doctrine
+ coordinated_drills: "표준화된 통합 훈련"
+ firepower_integration: "대대급 화력 통합"
+ logistical_standardization: "전구급 병참 표준화"
+ combined_arms_exercise: "병과 간 통합 훈련"
+ modular_template_reform: "모듈식 편성 개혁"

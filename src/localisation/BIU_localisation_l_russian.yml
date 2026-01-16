@@ -1,0 +1,20 @@
+l_russian:
+ MIA_light_infantry: "Батальон лёгкой пехоты"
+ MIA_heavy_infantry: "Батальон тяжёлой пехоты"
+ MIA_garrison_infantry: "Гарнизонный батальон"
+ MIA_militia_infantry: "Батальон ополчения"
+ MIA_combined_infantry: "Лёгкий батальон смешанных войск"
+ MIA_combined_infantry_heavy: "Усиленный лёгкий батальон смешанных войск"
+ MIA_motorized_combined: "Моторизованный батальон смешанных войск"
+ MIA_mechanized_combined: "Механизированный батальон смешанных войск"
+
+ # Combined Arms Doctrine
+ SUBDOCTRINE_combined_arms_initiative: "Инициатива смешанных войск"
+ SUBDOCTRINE_combined_arms_initiative_DESC: "Война уже не является простой суммой пехоты и артиллерии. Прямое назначение средств поддержки на уровне батальона позволяет нам создавать универсальные тактические подразделения, способные самостоятельно справляться со сложной обстановкой на поле боя."
+ 
+ # Stages of Combined Arms Doctrine
+ coordinated_drills: "Стандартизированная координационная подготовка"
+ firepower_integration: "Интеграция огневой мощи на уровне батальона"
+ logistical_standardization: "Стандартизация логистики на уровне театра военных действий"
+ combined_arms_exercise: "Тактические учения смешанных родов войск"
+ modular_template_reform: "Модульная реформа формирования"
