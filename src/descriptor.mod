@@ -3,4 +3,4 @@ tags={
 	"Military"
 }
 name="More Infantry & Artillery"
-supported_version="1.17.*.*"
+supported_version="1.17.3.0"

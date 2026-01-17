@@ -1,0 +1,120 @@
+sub_units = {
+    MIA_fort_engineer = {
+        abbreviation = "ENG"
+        sprite = infantry
+        map_icon_category = infantry
+        priority = 0
+        ai_priority = 0
+        active = no
+        affects_speed = no
+
+        type = {
+            infantry
+            support
+        }
+
+        group = support
+
+        categories = {
+            category_support_battalions
+            category_army
+        }
+
+
+        combat_width = 0
+
+        #Size Definitions
+        max_strength = 1
+        max_organisation = 20
+        default_morale = 0.1
+        manpower = 300
+        training_time = 120
+
+        #Misc Abilities
+        weight = 0.1
+        supply_consumption = 0.02
+
+        entrenchment = 100
+
+        battalion_mult = {
+            category = category_line_artillery
+            breakthrough = -1
+        }
+        battalion_mult = {
+            category = category_line_artillery
+            weight = 2
+            add = yes
+        }
+        battalion_mult = {
+            category = category_light_infantry
+            breakthrough = -1
+        }
+        battalion_mult = {
+            category = category_light_infantry
+            weight = 1
+            add = yes
+        }
+
+
+        essential = {
+            support_equipment
+        }
+
+        need = {
+            support_equipment = 10
+        }
+
+        plain = {
+            movement = -10
+            attack = -10
+        }
+
+        forest = {
+            movement = -10
+            attack = -10
+        }
+
+        hills = {
+            movement = -10
+            attack = -10
+        }
+
+        mountain = {
+            movement = -10
+            attack = -10
+        }
+
+        jungle = {
+            movement = -10
+            attack = -10
+        }
+
+        marsh = {
+            movement = -10
+            attack = -10
+        }
+
+        fort = {
+            defense = 0.3# 在堡垒中防御优势极大
+            movement = -10
+            attack = -10
+        }
+
+        river = {
+            movement = -10
+            attack = -10
+        }
+
+        urban = {
+            movement = -10
+            attack = -10
+        }
+
+        amphibious = {
+            movement = -10
+            attack = -10
+        }
+
+        same_support_type = engineer
+    }
+}

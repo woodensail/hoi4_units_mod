@@ -1,4 +1,5 @@
 l_english:
+ category_combined_infantry: "Combined Arms Infantry"
  MIA_light_infantry: "Light Infantry Battalion"
  MIA_heavy_infantry: "Heavy Infantry Battalion"
  MIA_garrison_infantry: "Garrison Battalion"
@@ -7,6 +8,10 @@ l_english:
  MIA_combined_infantry_heavy: "Reinforced Light Combined Arms Battalion"
  MIA_motorized_combined: "Motorized Combined Arms Battalion"
  MIA_mechanized_combined: "Mechanized Combined Arms Battalion"
+ MIA_fort_engineer: "Fort Engineer Company"
+ MIA_airborne_artillery_brigade: "Airborne Artillery Battalion"
+ MIA_airborne_anti_tank_brigade: "Airborne Anti-Tank Battalion"
+
 
  # Combined Arms Doctrine
  SUBDOCTRINE_combined_arms_initiative: "Combined Arms Initiative"

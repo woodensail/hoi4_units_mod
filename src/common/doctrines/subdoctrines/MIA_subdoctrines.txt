@@ -1,7 +1,7 @@
 combined_arms_initiative = {
     track = infantry
-    name = SUBDOCTRINE_COMBINED_ARMS_DAWN
-    description = SUBDOCTRINE_COMBINED_ARMS_DAWN_DESC
+    name = SUBDOCTRINE_COMBINED_ARMS_INITIATIVE
+    description = SUBDOCTRINE_COMBINED_ARMS_INITIATIVE_DESC
     icon = GFX_doctrine_mission_type_tactics_medium
 
     xp_cost = 100
@@ -19,7 +19,7 @@ combined_arms_initiative = {
     # 仅针对合成化部队
     category_combined_infantry = {
         max_organisation = 5
-        training_time_factor = -0.1
+        combat_width = -0.5
     }
 
     # --- 阶段奖励 (REWARDS) ---
@@ -29,8 +29,8 @@ combined_arms_initiative = {
         coordinated_drills = {
             category_combined_infantry = {
                 max_organisation = 5           # 累计 +10
-                reliability_factor = 0.05      # 可靠性补偿 +5%
-                default_morale = 0.05
+                default_morale = 0.1           # 提高组织度恢复
+                defense = 0.1                  # 基础防御提升
             }
         }
 
@@ -38,10 +38,9 @@ combined_arms_initiative = {
         # 强调营级单位单独作战时的火力密度提升
         firepower_integration = {
             category_combined_infantry = {
-                soft_attack = 0.05
-                hard_attack = 0.05
-                defense = 0.05
-                breakthrough = 0.05
+                soft_attack = 0.1
+                hard_attack = 0.1
+                breakthrough = 0.1
             }
         }
 
@@ -51,7 +50,7 @@ combined_arms_initiative = {
             category_combined_infantry = {
                 supply_consumption = -0.2     # 显著降低补给压力
                 max_organisation = 5           # 累计 +15
-                reliability_factor = 0.05      # 累计可靠性补偿达 +10%，完全抵消基础惩罚
+                hp = 10                         # 增加 10 点 HP 减少战损
             }
         }
 
@@ -61,8 +60,6 @@ combined_arms_initiative = {
             category_combined_infantry = {
                 breakthrough = 0.2             # 增加突破
                 maximum_speed = 0.2            # 增加移动速度
-                max_planning_factor = 0.1      # 提升计划上限
-                planning_speed = 0.1           # 提升计划速度
             }
         }
 
@@ -71,7 +68,6 @@ combined_arms_initiative = {
         modular_template_reform = {
             category_combined_infantry = {
                 combat_width = -1.0            # 核心：降低宽度
-                initiative = 0.2               # 大幅提升主动性，模拟高效率战场选靶
                 max_organisation = 5           # 累计 +20，最终组织度回到正常步兵水平
                 default_morale = 0.1           # 提升组织度恢复
             }

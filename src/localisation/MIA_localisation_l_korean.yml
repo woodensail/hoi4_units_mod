@@ -1,4 +1,5 @@
 l_korean:
+ category_combined_infantry: "병과 혼성 보병"
  MIA_light_infantry: "경장 보병대대"
  MIA_heavy_infantry: "중장 보병대대"
  MIA_garrison_infantry: "경비대대"
@@ -7,6 +8,10 @@ l_korean:
  MIA_combined_infantry_heavy: "강화된 경량 병과 혼성대대"
  MIA_motorized_combined: "기동 병과 혼성대대"
  MIA_mechanized_combined: "기계화 병과 혼성대대"
+ MIA_fort_engineer: "요새공학대대"
+ MIA_airborne_artillery_brigade: "공수포병대대"
+ MIA_airborne_anti_tank_brigade: "공수대전차대대"
+
 
  # Combined Arms Doctrine
  SUBDOCTRINE_combined_arms_initiative: "병과 혼성 이니셔티브"

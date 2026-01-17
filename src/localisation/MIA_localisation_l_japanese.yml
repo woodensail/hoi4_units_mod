@@ -1,4 +1,5 @@
 l_japanese:
+ category_combined_infantry: "複合兵科歩兵"
  MIA_light_infantry: "軽装歩兵大隊"
  MIA_heavy_infantry: "重装歩兵大隊"
  MIA_garrison_infantry: "警備大隊"
@@ -7,6 +8,10 @@ l_japanese:
  MIA_combined_infantry_heavy: "強化軽量複合兵科大隊"
  MIA_motorized_combined: "機動複合兵科大隊"
  MIA_mechanized_combined: "機械化複合兵科大隊"
+ MIA_fort_engineer: "要塞工兵中隊"
+ MIA_airborne_artillery_brigade: "空挺砲兵大隊"
+ MIA_airborne_anti_tank_brigade: "空挺対戦車大隊"
+
 
  # Combined Arms Doctrine
  SUBDOCTRINE_combined_arms_initiative: "複合兵科イニシアティブ"

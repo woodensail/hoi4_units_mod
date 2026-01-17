@@ -1,0 +1,412 @@
+sub_units = {
+
+    # 1. 轻步兵 (MIA_Light_Infantry)
+    MIA_light_infantry = {
+        abbreviation = "L-INF"
+        sprite = infantry
+        map_icon_category = infantry
+        priority = 600
+        ai_priority = 0
+        active = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_light_infantry
+            category_all_infantry
+            category_army
+            category_infantry_and_bicycle
+        }
+
+        need = {
+            infantry_equipment = 80
+            support_equipment = 2
+        }
+        manpower = 1000
+        training_time = 105     # 高25%
+
+        max_strength = 20.0     # 0.8x
+        max_organisation = 60
+        default_morale = 0.45   # 1.5x
+        supply_consumption = 0.048 # 0.8x
+        weight = 0.45           # 0.9x
+        maximum_speed = 0.2     # 1.2x
+        combat_width = 2.0
+
+        soft_attack = -0.1      # 轻步兵软攻击略低
+        hard_attack = -0.2      # 硬攻击更低
+        ap_attack = -0.1        # 穿甲攻击较低
+        breakthrough = 0.1      # 突破能力稍高
+        defense = -0.1          # 防御稍低
+        recon = 0.4
+        initiative = 0.01
+        suppression = 0.75       # 镇压能力较低
+
+        terrain_modifiers = {
+            plains = { attack = 0.0 defence = 0.0 movement = 0.0 }
+            desert = { attack = 0.0 defence = 0.0 movement = 0.0 }
+            forest = { attack = 0.2 defence = 0.2 movement = 0.1 }
+            hills = { attack = 0.2 defence = 0.2 movement = 0.1 }
+            mountain = { attack = 0.4 defence = 0.4 movement = 0.2 } # 2x complex
+            jungle = { attack = 0.2 defence = 0.2 movement = 0.1 }
+            marsh = { attack = 0.4 defence = 0.4 movement = 0.2 }    # 2x complex
+            urban = { attack = 0.2 defence = 0.2 movement = 0.1 }
+            river = { attack = 0.2 defence = 0.0 movement = 0.1 }      # complex + water_def(-0.2)
+            amphibious = { attack = 0.2 defence = 0.0 movement = 0.1 } # complex + water_def(-0.2)
+        }
+    }
+
+    # 2. 警备部队 (MIA_Garrison_Infantry)
+    # 逻辑：common.mov: -0.5, urban.def: 0.5, water.def: 0.25
+    MIA_garrison_infantry = {
+        abbreviation = "G-INF"
+        sprite = infantry
+        map_icon_category = infantry
+        priority = 600
+        ai_priority = 0
+        active = yes
+        type = { infantry }
+        group = infantry
+        categories = {
+            category_front_line
+            category_light_infantry
+            category_all_infantry
+            category_army
+            category_infantry_and_bicycle
+        }
+
+        need = {
+            infantry_equipment = 50 # 成本只有标准步兵师一半
+        }
+        manpower = 750
+        training_time = 90
+
+        max_strength = 20.0
+        max_organisation = 60
+        default_morale = 0.15   # 0.5x
+        supply_consumption = 0.035 # 0.5x
+        weight = 0.25           # 0.5x
+        combat_width = 2.0
+        suppression = 1.5
+
+        soft_attack = -0.5       # 警备部队软攻击较低
+        hard_attack = -0.5       # 硬攻击更低
+        breakthrough = -0.75     # 突破能力较低
+        defense = -0.2           # 防御能力较高，适合守备
+        entrenchment = 1.0
+
+        terrain_modifiers = {
+            plains = { movement = -0.5 }
+            desert = { movement = -0.5 }
+            forest = { movement = -0.5 }
+            hills = { movement = -0.5 }
+            mountain = { movement = -0.5 }
+            jungle = { movement = -0.5 }
+            marsh = { movement = -0.5 }
+            urban = { attack = 0.1 defence = 0.5 movement = -0.5 }
+            river = { defence = 0.25 movement = -0.5 }
+            amphibious = { defence = 0.25 movement = -0.5 }
+        }
+
+        # 3. 民兵营 (MIA_Militia_Infantry)
+        # 低成本，战斗续航差，战斗力低下，但有较高的侦察能力和主动性，有城市战加成
+        MIA_militia_infantry = {
+            abbreviation = "M-INF"
+            sprite = infantry
+            map_icon_category = infantry
+            priority = 600
+            ai_priority = 0
+            active = yes
+            type = { infantry }
+            group = infantry
+            categories = {
+                category_front_line
+                category_light_infantry
+                category_all_infantry
+                category_army
+                category_infantry_and_bicycle
+            }
+
+            need = {
+                infantry_equipment = 40 # 成本只有标准步兵师40%
+            }
+            manpower = 500
+            training_time = 45
+
+            max_strength = 15.0
+            max_organisation = 45
+            default_morale = 0.6    # 2x
+            supply_consumption = 0.014 # 0.2x
+            weight = 0.25           # 0.5x
+            combat_width = 2.0
+            suppression = 0.75
+
+            soft_attack = -0.6       # 民兵软攻击较低
+            hard_attack = -0.8       # 硬攻击更低
+            breakthrough = -0.8      # 突破能力较低
+            defense = -0.4            # 防御能力稍高
+
+            recon = 0.5
+            initiative = 0.02
+
+            terrain_modifiers = {
+                urban = { defence = 0.2 }
+            }
+        }
+
+        # 4. 重步兵营
+        MIA_heavy_infantry = {
+            abbreviation = "H-INF"
+            sprite = infantry
+            map_icon_category = infantry
+            priority = 600
+            ai_priority = 0
+            active = yes
+            type = { infantry }
+            group = infantry
+            categories = {
+                category_front_line
+                category_light_infantry
+                category_all_infantry
+                category_army
+                category_infantry_and_bicycle
+            }
+
+            # 资源消耗：比普通步兵贵，但远低于合成营
+            need = {
+                infantry_equipment = 100
+                artillery_equipment = 6
+            }
+            manpower = 1000
+            training_time = 120
+            transport = infantry_equipment
+
+            # 基础属性：作为早期探索，维持高组织度，体现“重步兵”的坚韧
+            max_strength = 25.0
+            max_organisation = 60
+            default_morale = 0.3
+            supply_consumption = 0.1
+            weight = 0.55
+            combat_width = 2.0
+            suppression = 1.5
+
+            # --- 核心属性修正 (基于 100枪+6炮 的基数平衡) ---
+            soft_attack = -0.6
+            hard_attack = -0.6
+            breakthrough = -0.5
+            defense = -0.2
+            ap_attack = -0.5
+
+            # --- 地形惩罚：轻微增加 ---
+            # 相比合成营，重步兵的惩罚较小，仅体现出火炮对复杂地形的轻微拖累
+            forest = { attack = -0.05 movement = -0.05 }
+            mountain = { movement = -0.05 }
+            jungle = { attack = -0.05 movement = -0.05 }
+            marsh = { attack = -0.05 movement = -0.05 }
+            fort = { attack = 0.02 }
+            river = { attack = -0.05 movement = -0.05 }
+            amphibious = { attack = -0.1 }
+        }
+        MIA_combined_infantry = {
+            abbreviation = "INF-C"
+            sprite = infantry
+            map_icon_category = infantry
+            priority = 600
+            ai_priority = 0
+            active = yes
+            type = { infantry }
+            group = infantry
+
+            categories = {
+                category_front_line
+                category_light_infantry
+                category_all_infantry
+                category_army
+                category_infantry_and_bicycle
+                category_combined_infantry
+            }
+
+            # 资源消耗：全面且昂贵
+            need = {
+                infantry_equipment = 100
+                artillery_equipment = 8
+                anti_tank_equipment = 6
+                anti_air_equipment = 6
+                support_equipment = 10
+            }
+
+            manpower = 1300
+            training_time = 150
+            transport = infantry_equipment
+
+            # --- 基础属性调整 ---
+            max_strength = 30
+
+            # 惩罚项：体现早期合成化的“混乱”
+            max_organisation = 30         # 显著低于师级步炮合成数据(40-45)，模拟指挥混乱
+            default_morale = 0.15          # 显著低于师级步炮合成数据(0.2-0.25)，整合部队需要更长时间重整
+
+            supply_consumption = 0.16     # 进一步微调，体现多种弹药补给的压力
+            weight = 0.8                #  原版步兵0.5，增加0.3代表火炮和额外装备
+            suppression = 1.5
+
+            # 劣势设计
+            combat_width = 4.0            # 相当于所有兵种的粗暴合并，这是该单位在学说前期的核心痛点
+
+            # --- 核心属性修正 (Multipliers) ---
+            # 这里的数值会乘以所有装备属性的总和
+            defense = -0.2   # 诸兵种合成显著提高了防御力，该数值大约是普通步兵*1.5
+            breakthrough = -0.3 # 合成营的特点就是擅长进攻，但是缺乏学说支持的合成营很难将其优势发挥出来
+            soft_attack = -0.4 # 合成营加强了一个火炮连，因此这里采用火炮支援连的数据
+            hard_attack = -0.7 # 合成营加强了一个反坦克排，这里采用了半个反坦克支援连的数据
+            air_attack = -0.8 # 合成营加强了一个防空排，这里采用了半个防空支援连的数据
+            ap_attack = -0.8
+
+            initiative = 0.01
+            entrenchment = 1
+            # --- 地形惩罚强化 ---
+            # 因为编制内包含了多种重武器和牵引设备，在复杂地形表现更差
+            forest = { attack = -0.1 movement = -0.1 }
+            mountain = { movement = -0.1 }
+            jungle = { attack = -0.1 movement = -0.1 }
+            marsh = { attack = -0.1 movement = -0.15 }
+            fort = { attack = 0.05 }
+            river = { attack = -0.1 movement = -0.1 }
+            amphibious = { attack = -0.2 }
+        }
+
+        MIA_motorized_combined = {
+            abbreviation = "MOT_C"
+            sprite = infantry
+            map_icon_category = infantry
+            priority = 600
+            ai_priority = 0
+            active = yes
+
+            type = { motorized }
+            group = mobile
+
+            categories = {
+                category_front_line
+                category_all_infantry
+                category_army
+                category_vehicle_infantry
+                category_mobile_and_mobile_combat_sup
+                category_combined_infantry
+            }
+
+            # 资源消耗：在摩步基础上增加了大量支援武器和载具需求
+            need = {
+                infantry_equipment = 100
+                motorized_equipment = 50   # 额外载具用以拖曳火炮和运输弹药
+                artillery_equipment = 8
+                anti_tank_equipment = 6
+                anti_air_equipment = 6
+                support_equipment = 12
+            }
+
+            manpower = 1500               # 包含大量技术保障人员
+            training_time = 180
+            transport = motorized_equipment
+
+            # --- 基础属性 ---
+            max_strength = 30
+            max_organisation = 30
+            default_morale = 0.15
+
+            supply_consumption = 0.25     # 极高的补给压力（油料+弹药）
+            weight = 1.2                  # 包含大量载具和重武器
+            combat_width = 4.0            # 关键限制
+            suppression = 1.5
+
+            # --- 属性修正 ---
+            # 相比徒步合成营，载具提供了更好的进攻平台
+            defense = -0.2   # 同轻型合成营
+            breakthrough = -0.2 # 同轻型合成营
+            soft_attack = -0.4 # 同轻型合成营
+            hard_attack = -0.7 # 同轻型合成营
+            air_attack = -0.8 # 同轻型合成营
+            ap_attack = -0.8
+
+            initiative = 0.01
+
+            # --- 地形惩罚 ---
+            # 结合了摩步的复杂地形劣势和重武器的拖累
+            forest = { attack = -0.15 movement = -0.5 }
+            hills = { movement = -0.05 }
+            mountain = { movement = -0.1 }
+            jungle = { attack = -0.2 movement = -0.5 }
+            marsh = { attack = -0.15 movement = -0.3 }
+            fort = { attack = 0.05 }
+            river = { attack = -0.15 movement = -0.15 }
+            amphibious = { attack = -0.3 }
+            urban = { attack = -0.1 }
+        }
+
+        MIA_mechanized_combined = {
+            abbreviation = "MEC_C"
+            sprite = infantry
+            map_icon_category = infantry
+            priority = 615
+            ai_priority = 0
+            active = yes
+
+            type = { mechanized }
+            group = mobile
+
+            categories = {
+                category_front_line
+                category_all_infantry
+                category_army
+                category_vehicle_infantry
+                category_mobile_and_mobile_combat_sup
+                category_combined_infantry
+            }
+
+            # 资源消耗：极其昂贵
+            need = {
+                infantry_equipment = 100
+                mechanized_equipment = 60  # 需要更多步战车来承载重武器小组
+                artillery_equipment = 8
+                anti_tank_equipment = 6   # 强化了反坦克属性
+                anti_air_equipment = 6
+                support_equipment = 15
+            }
+
+            manpower = 1600
+            training_time = 180
+            transport = mechanized_equipment
+
+            # --- 基础属性 ---
+            max_strength = 35
+            max_organisation = 30
+            default_morale = 0.15
+
+            supply_consumption = 0.33     # 最高的补给消耗
+            weight = 1.5
+            combat_width = 4.0
+            suppression = 1.5
+
+            # --- 核心属性修正 ---
+            # 利用机械化底盘，大幅提升攻坚能力
+            defense = 0   # 机械化装备提供了大量防御，因此取消防御惩罚，最终防御略高于普通机械化步兵
+            breakthrough = -0.2 # 同轻型合成营
+            soft_attack = -0.3 # 原版机械步有10%软攻加成，因此这里采用类似的数据在轻型合成营上修改
+            hard_attack = -0.5 # 原版机械采用了增加4倍硬攻的方式强行提高硬攻，这里本身硬攻就很高了，只提高20%
+            air_attack = -0.8 # 同轻型合成营
+            ap_attack = -0.8
+
+            initiative = 0.01
+
+            # --- 地形惩罚 ---
+            # 沉重的半履带/全履带车辆对特定地形极其敏感
+            forest = { attack = -0.2 }
+            mountain = { movement = -0.1 }
+            jungle = { attack = -0.3 }
+            marsh = { attack = -0.15 }
+            fort = { attack = 0.05 }
+            river = { attack = -0.2 movement = -0.2 }
+            amphibious = { attack = -0.4 }
+            urban = { attack = -0.1 }
+        }
+    }

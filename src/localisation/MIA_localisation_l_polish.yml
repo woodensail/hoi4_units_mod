@@ -1,4 +1,5 @@
 l_polish:
+ category_combined_infantry: "Piechota Wojsk Połączonych"
  MIA_light_infantry: "Batalion lekkiej piechoty"
  MIA_heavy_infantry: "Batalion ciężkiej piechoty"
  MIA_garrison_infantry: "Batalion garnizonowy"
@@ -7,6 +8,10 @@ l_polish:
  MIA_combined_infantry_heavy: "Wzmocniony lekki batalion wojsk połączonych"
  MIA_motorized_combined: "Batalion wojsk połączonych o napędzie mechanicznym"
  MIA_mechanized_combined: "Batalion zmechanizowany wojsk połączonych"
+ MIA_fort_engineer: "Kompania inżynierów fortyfikacyjnych"
+ MIA_airborne_artillery_brigade: "Batalion artylerii powietrznodesantowy"
+ MIA_airborne_anti_tank_brigade: "Batalion przeciwboczny powietrznodesantowy"
+
 
  # Combined Arms Doctrine
  SUBDOCTRINE_combined_arms_initiative: "Inicjatywa Wojsk Połączonych"

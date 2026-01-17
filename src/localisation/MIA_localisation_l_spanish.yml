@@ -1,4 +1,5 @@
 l_spanish:
+ category_combined_infantry: "Infantería de armas combinadas"
  MIA_light_infantry: "Batallón de infantería ligera"
  MIA_heavy_infantry: "Batallón de infantería pesada"
  MIA_garrison_infantry: "Batallón de guarnición"
@@ -7,6 +8,10 @@ l_spanish:
  MIA_combined_infantry_heavy: "Batallón de armas combinadas ligero reforzado"
  MIA_motorized_combined: "Batallón de armas combinadas motorizado"
  MIA_mechanized_combined: "Batallón de armas combinadas mecanizado"
+ MIA_fort_engineer: "Compañía de ingenieros de fortificación"
+ MIA_airborne_artillery_brigade: "Batallón de artillería aerotransportado"
+ MIA_airborne_anti_tank_brigade: "Batallón anticarro aerotransportado"
+
 
  # Combined Arms Doctrine
  SUBDOCTRINE_combined_arms_initiative: "Iniciativa de armas combinadas"

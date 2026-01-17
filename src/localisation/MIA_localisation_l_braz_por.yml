@@ -1,4 +1,5 @@
 l_braz_por:
+ category_combined_infantry: "Infantaria de Braços Combinados"
  MIA_light_infantry: "Batalhão de Infantaria Leve"
  MIA_heavy_infantry: "Batalhão de Infantaria Pesada"
  MIA_garrison_infantry: "Batalhão de Guarnição"
@@ -7,6 +8,10 @@ l_braz_por:
  MIA_combined_infantry_heavy: "Batalhão de Braços Combinados Leve Reforçado"
  MIA_motorized_combined: "Batalhão de Braços Combinados Motorizado"
  MIA_mechanized_combined: "Batalhão de Braços Combinados Mecanizado"
+ MIA_fort_engineer: "Companhia de Engenheiros de Fortificação"
+ MIA_airborne_artillery_brigade: "Batalhão de Artilharia Aerotransportável"
+ MIA_airborne_anti_tank_brigade: "Batalhão Antitanque Aerotransportável"
+
 
  # Combined Arms Doctrine
  SUBDOCTRINE_combined_arms_initiative: "Iniciativa de Braços Combinados"

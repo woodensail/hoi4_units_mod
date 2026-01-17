@@ -1,4 +1,5 @@
 l_russian:
+ category_combined_infantry: "Пехота смешанных войск"
  MIA_light_infantry: "Батальон лёгкой пехоты"
  MIA_heavy_infantry: "Батальон тяжёлой пехоты"
  MIA_garrison_infantry: "Гарнизонный батальон"
@@ -7,6 +8,10 @@ l_russian:
  MIA_combined_infantry_heavy: "Усиленный лёгкий батальон смешанных войск"
  MIA_motorized_combined: "Моторизованный батальон смешанных войск"
  MIA_mechanized_combined: "Механизированный батальон смешанных войск"
+ MIA_fort_engineer: "Рота инженеров-фортификаторов"
+ MIA_airborne_artillery_brigade: "Батальон десантной артиллерии"
+ MIA_airborne_anti_tank_brigade: "Батальон десантных противотанковых войск"
+
 
  # Combined Arms Doctrine
  SUBDOCTRINE_combined_arms_initiative: "Инициатива смешанных войск"
