@@ -1,24 +1,25 @@
 sub_units = {
     MIA_fort_engineer = {
-        abbreviation = "ENG"
-        sprite = infantry
-        map_icon_category = infantry
-        priority = 0
-        ai_priority = 0
-        active = no
-        affects_speed = no
+        abbreviation = "F-ENG"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
 
         type = {
             infantry
             support
         }
 
-        group = support
-
-        categories = {
-            category_support_battalions
-            category_army
-        }
+		group = support
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
 
 
         combat_width = 0
@@ -69,6 +70,11 @@ sub_units = {
             attack = -10
         }
 
+        desert = {
+            movement = -10
+            attack = -10
+        }
+        
         forest = {
             movement = -10
             attack = -10
