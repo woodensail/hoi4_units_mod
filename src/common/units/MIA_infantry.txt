@@ -122,6 +122,7 @@ sub_units = {
             category_light_infantry
             category_all_infantry
             category_army
+            category_militia
             category_infantry_and_bicycle
         }
         need = {
