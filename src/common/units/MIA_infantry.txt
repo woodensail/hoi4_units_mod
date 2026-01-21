@@ -144,6 +144,7 @@ sub_units = {
         hard_attack = -0.8          # 基本没有反坦克能力
         breakthrough = -0.7         # 民兵几乎无法发起进攻
         defense = -0.3              # 防御也应略低于步兵
+        initiative = 0.04
 
         terrain_modifiers = {
             urban = { defense = 0.2 } # 巷战加成
