@@ -37,25 +37,6 @@ sub_units = {
 
         entrenchment = 100
 
-        battalion_mult = {
-            category = category_line_artillery
-            breakthrough = -1
-        }
-        battalion_mult = {
-            category = category_line_artillery
-            weight = 2
-            add = yes
-        }
-        battalion_mult = {
-            category = category_light_infantry
-            breakthrough = -1
-        }
-        battalion_mult = {
-            category = category_light_infantry
-            weight = 1
-            add = yes
-        }
-
 
         essential = {
             support_equipment
@@ -66,38 +47,45 @@ sub_units = {
         }
 
         plain = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         desert = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
         
         forest = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         hills = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         mountain = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         jungle = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         marsh = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         fort = {
@@ -107,18 +95,21 @@ sub_units = {
         }
 
         river = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         urban = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         amphibious = {
-            movement = -10
-            attack = -10
+            movement = -0.5
+            attack = -0.5
+            defense = 0.1
         }
 
         same_support_type = engineer
