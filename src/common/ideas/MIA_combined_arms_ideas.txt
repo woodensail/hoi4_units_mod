@@ -1,0 +1,88 @@
+ideas = {
+    country = {
+        # 阶段 1
+        CA_stage_1_idea = {
+            picture = GFX_focus_generic_combined_arms
+            allowed = { always = yes }
+            removal_cost = -1
+            modifier = {
+                category_combined_infantry_max_organisation = 10
+                category_combined_infantry_combat_width = -0.5
+                category_combined_infantry_default_morale = 0.1
+                category_combined_infantry_defense = 0.1
+            }
+        }
+
+        # 阶段 2
+        CA_stage_2_idea = {
+            picture = GFX_focus_generic_combined_arms
+            allowed = { always = yes }
+            removal_cost = -1
+            modifier = {
+                category_combined_infantry_max_organisation = 10
+                category_combined_infantry_combat_width = -0.5
+                category_combined_infantry_default_morale = 0.1
+                category_combined_infantry_defense = 0.1
+                category_combined_infantry_soft_attack = 0.1
+                category_combined_infantry_hard_attack = 0.1
+                category_combined_infantry_breakthrough = 0.1
+            }
+        }
+
+        # 阶段 3
+        CA_stage_3_idea = {
+            picture = GFX_focus_generic_combined_arms
+            allowed = { always = yes }
+            removal_cost = -1
+            modifier = {
+                category_combined_infantry_max_organisation = 15
+                category_combined_infantry_combat_width = -0.5
+                category_combined_infantry_default_morale = 0.1
+                category_combined_infantry_defense = 0.1
+                category_combined_infantry_soft_attack = 0.1
+                category_combined_infantry_hard_attack = 0.1
+                category_combined_infantry_breakthrough = 0.1
+                category_combined_infantry_supply_consumption = -0.2
+                category_combined_infantry_hp = 10
+            }
+        }
+
+        # 阶段 4
+        CA_stage_4_idea = {
+            picture = GFX_focus_generic_combined_arms
+            allowed = { always = yes }
+            removal_cost = -1
+            modifier = {
+                category_combined_infantry_max_organisation = 15
+                category_combined_infantry_combat_width = -0.5
+                category_combined_infantry_default_morale = 0.1
+                category_combined_infantry_defense = 0.1
+                category_combined_infantry_soft_attack = 0.1
+                category_combined_infantry_hard_attack = 0.1
+                category_combined_infantry_breakthrough = 0.3
+                category_combined_infantry_supply_consumption = -0.2
+                category_combined_infantry_hp = 10
+                category_combined_infantry_maximum_speed = 0.2
+            }
+        }
+
+        # 阶段 5
+        CA_stage_5_idea = {
+            picture = GFX_focus_generic_combined_arms
+            allowed = { always = yes }
+            removal_cost = -1
+            modifier = {
+                category_combined_infantry_max_organisation = 20
+                category_combined_infantry_combat_width = -1.5
+                category_combined_infantry_default_morale = 0.2
+                category_combined_infantry_defense = 0.1
+                category_combined_infantry_soft_attack = 0.1
+                category_combined_infantry_hard_attack = 0.1
+                category_combined_infantry_breakthrough = 0.3
+                category_combined_infantry_supply_consumption = -0.2
+                category_combined_infantry_hp = 10
+                category_combined_infantry_maximum_speed = 0.2
+            }
+        }
+    }
+}

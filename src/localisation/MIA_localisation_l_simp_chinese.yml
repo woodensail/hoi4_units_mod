@@ -27,3 +27,21 @@
  combined_arms_initiative_logistical_standardization: "战区级后勤标准化"
  combined_arms_initiative_combined_arms_exercise: "跨兵种战术演习"
  combined_arms_initiative_modular_template_reform: "模块化编制改革"
+
+ # 决议组
+ combined_arms_reform_category: "诸兵种合成化倡议"
+ combined_arms_reform_category_desc: "战争不再是步兵与大炮的简单加和。通过将支援火器直接下放到营级编制，我们正在构建一种能够独立应对复杂战场的全能战术单位。"
+
+ # 决议项
+ ca_drills_decision: "标准化协同训练"
+ ca_firepower_decision: "营属火力整合"
+ ca_logistics_decision: "战区级后勤标准化"
+ ca_exercise_decision: "跨兵种战术演习"
+ ca_reform_decision: "模块化编制改革"
+
+ # 国家精神显示名称
+ CA_stage_1_modifier: "合成化倡议：阶段 I"
+ CA_stage_2_modifier: "合成化倡议：阶段 II"
+ CA_stage_3_modifier: "合成化倡议：阶段 III"
+ CA_stage_4_modifier: "合成化倡议：阶段 IV"
+ CA_stage_5_modifier: "合成化倡议：完成"

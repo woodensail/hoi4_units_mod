@@ -1,0 +1,69 @@
+# 第一阶段：协同化训练
+CA_stage_1_modifier = {
+    category_combined_infantry = {
+        max_organisation = 10           # 基础5 + 阶段5
+        combat_width = -0.5             # 基础
+        default_morale = 0.1
+        defense = 0.1
+    }
+}
+
+# 第二阶段：火力整合
+CA_stage_2_modifier = {
+    category_combined_infantry = {
+        max_organisation = 10
+        combat_width = -0.5
+        default_morale = 0.1
+        defense = 0.1
+        soft_attack = 0.1
+        hard_attack = 0.1
+        breakthrough = 0.1
+    }
+}
+
+# 第三阶段：后勤标准化
+CA_stage_3_modifier = {
+    category_combined_infantry = {
+        max_organisation = 15           # 累计 +15
+        combat_width = -0.5
+        default_morale = 0.1
+        defense = 0.1
+        soft_attack = 0.1
+        hard_attack = 0.1
+        breakthrough = 0.1
+        supply_consumption = -0.2
+        hp = 10
+    }
+}
+
+# 第四阶段：战术演习
+CA_stage_4_modifier = {
+    category_combined_infantry = {
+        max_organisation = 15
+        combat_width = -0.5
+        default_morale = 0.1
+        defense = 0.1
+        soft_attack = 0.1
+        hard_attack = 0.1
+        breakthrough = 0.3             # 0.1 + 0.2
+        supply_consumption = -0.2
+        hp = 10
+        maximum_speed = 0.2
+    }
+}
+
+# 第五阶段：最终改革
+CA_stage_5_modifier = {
+    category_combined_infantry = {
+        max_organisation = 20           # 累计 +20
+        combat_width = -1.5             # 累计 -1.5
+        default_morale = 0.2           # 0.1 + 0.1
+        defense = 0.1
+        soft_attack = 0.1
+        hard_attack = 0.1
+        breakthrough = 0.3
+        supply_consumption = -0.2
+        hp = 10
+        maximum_speed = 0.2
+    }
+}

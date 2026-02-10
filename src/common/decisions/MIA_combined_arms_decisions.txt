@@ -1,0 +1,69 @@
+combined_arms_reform_category = {
+    allow = {
+        NOT = { has_dlc = "No Compromise, No Surrender" }
+    }
+    priority = 100
+    # 阶段 1
+    ca_drills_decision = {
+        icon = generic_research_bonus
+        cost = 100
+        visible = { NOT = { has_modifier = CA_stage_1_modifier } NOT = { has_modifier = CA_stage_2_modifier } NOT = { has_modifier = CA_stage_3_modifier } NOT = { has_modifier = CA_stage_4_modifier } NOT = { has_modifier = CA_stage_5_modifier } }
+        available = { army_experience >= 100 }
+        complete_effect = {
+            army_experience = -100
+            add_ideas = CA_stage_1_modifier
+        }
+    }
+
+    # 阶段 2
+    ca_firepower_decision = {
+        icon = generic_research_bonus
+        cost = 100
+        visible = { has_modifier = CA_stage_1_modifier }
+        available = { army_experience >= 100 }
+        complete_effect = {
+            army_experience = -100
+            remove_ideas = CA_stage_1_modifier
+            add_ideas = CA_stage_2_modifier
+        }
+    }
+
+    # 阶段 3
+    ca_logistics_decision = {
+        icon = generic_research_bonus
+        cost = 100
+        visible = { has_modifier = CA_stage_2_modifier }
+        available = { army_experience >= 100 }
+        complete_effect = {
+            army_experience = -100
+            remove_ideas = CA_stage_2_modifier
+            add_ideas = CA_stage_3_modifier
+        }
+    }
+
+    # 阶段 4
+    ca_exercise_decision = {
+        icon = generic_research_bonus
+        cost = 100
+        visible = { has_modifier = CA_stage_3_modifier }
+        available = { army_experience >= 100 }
+        complete_effect = {
+            army_experience = -100
+            remove_ideas = CA_stage_3_modifier
+            add_ideas = CA_stage_4_modifier
+        }
+    }
+
+    # 阶段 5 (终极改革)
+    ca_reform_decision = {
+        icon = generic_research_bonus
+        cost = 100
+        visible = { has_modifier = CA_stage_4_modifier }
+        available = { army_experience >= 100 }
+        complete_effect = {
+            army_experience = -100
+            remove_ideas = CA_stage_4_modifier
+            add_ideas = CA_stage_5_modifier
+        }
+    }
+}
